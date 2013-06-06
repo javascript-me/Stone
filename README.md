@@ -5,8 +5,10 @@ Stone
 如何跑当前的测试代码？
 =====================
 
+```
 node src/index.js
 mocha test/uploaderTest.js
+```
 
 
 
