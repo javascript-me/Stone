@@ -4,6 +4,12 @@ var formidable = require("formidable");
 var fs = require("fs");
 var util = require('util');
 
+function hasFile(files){
+    return Object.keys(files).length > 0;
+}
+
+exports.hasFile = hasFile;
+
 function onRequest(request, response) {
 
     var pathname = url.parse(request.url).pathname;
@@ -22,8 +28,10 @@ function onRequest(request, response) {
 
             console.log(util.inspect({fields: fields, files: files}));
 
-            if(files != undefined){
+            console.log("files.toString(): " + files[0]);
 
+//            if(files != undefined){
+            if(hasFile(files)){
                 fs.rename(files.my_file.path, "ok.bin", function (err) {
                     if (err) {
                         console.log("Start fs.unlink");
