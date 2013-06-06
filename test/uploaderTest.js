@@ -1,5 +1,6 @@
 
 var assert = require("assert");
+
 describe("Array", function(){
     describe("#indexOf()", function(){
         it("should return -1 when the value is not present", function(){
@@ -77,37 +78,37 @@ describe("POST request with real data", function(){
     });
 });
 
-describe("POST request", function(){
-   it("should return success", function(done){
-
-       var http = require("http");
-
-       var options = {
-           hostname: "localhost",
-           port: 9999,
-           path: "/upload",
-           method: "POST"
-       };
-
-       var request = http.request(options, function(response) {
-           assert.equal("200", response.statusCode);
-
-           var result = "";
-           response.on('data', function (chunk) {
-               result += chunk;
-           });
-           response.on("end", function(){
-               assert.equal("success upload", result);
-               done();
-           });
-       });
-
-       request.write('data\n');
-       request.write('data\n');
-       request.end();
-
-   });
-});
+//describe("POST request", function(){
+//   it("should return success", function(done){
+//
+//       var http = require("http");
+//
+//       var options = {
+//           hostname: "localhost",
+//           port: 9999,
+//           path: "/upload",
+//           method: "POST"
+//       };
+//
+//       var request = http.request(options, function(response) {
+//           assert.equal("200", response.statusCode);
+//
+//           var result = "";
+//           response.on('data', function (chunk) {
+//               result += chunk;
+//           });
+//           response.on("end", function(){
+//               assert.equal("success upload", result);
+//               done();
+//           });
+//       });
+//
+//       request.write('data\n');
+//       request.write('data\n');
+//       request.end();
+//
+//   });
+//});
 
 
 

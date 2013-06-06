@@ -22,12 +22,14 @@ function onRequest(request, response) {
 
             console.log(util.inspect({fields: fields, files: files}));
 
-            if(files == undefined){
+            if(files != undefined){
 
                 fs.rename(files.my_file.path, "ok.bin", function (err) {
                     if (err) {
                         console.log("Start fs.unlink");
-                        fs.unlink("ok.bin", function(err){});
+                        fs.unlink("ok.bin", function(err){
+                            console.log("Error: unlink. ");
+                        });
                         fs.rename(files.my_file.path, "ok.bin");
                     }
                 });
