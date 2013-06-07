@@ -29,13 +29,13 @@ function onRequest(request, response) {
             console.log(util.inspect({fields: fields, files: files}));
 
             if(hasFile(files)){
-                fs.rename(files["my_file"].path, "temp/" + files["my_file"].name, function (err) {
+                fs.rename(files.uploadedFile.path, "temp/" + files.uploadedFile.name, function (err) {
                     if (err) {
                         console.log("Start fs.unlink");
                         fs.unlink("ok.bin", function(err){
                             console.log("Error: unlink. ");
                         });
-                        fs.rename(files["my_file"].path, "temp/" + files["my_file"].name);
+                        fs.rename(files.uploadedFile.path, "temp/" + files.uploadedFile.name);
                     }
                 });
             }

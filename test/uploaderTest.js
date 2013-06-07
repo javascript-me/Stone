@@ -1,4 +1,5 @@
 var assert = require("assert");
+var mockData = require("./mockData");
 
 describe("GET request", function () {
     it("should return success", function (done) {
@@ -41,9 +42,12 @@ describe("POST request with real data", function () {
             });
             response.on("end", function () {
                 assert.equal("success upload", result);
-                done();
+                var existFileTest = require("./existFileTest");
+                existFileTest.onUploadSuccess(done);
             });
         });
+
+        var fileName = mockData.fileName;
 
         var boundaryKey = Math.random().toString(16); // random string
         request.setHeader('Content-Type', 'multipart/form-data; boundary="' + boundaryKey + '"');
@@ -54,10 +58,10 @@ describe("POST request with real data", function () {
                 + 'Content-Type: application/octet-stream\r\n'
                 // "name" is the name of the form field
                 // "filename" is the name of the original file
-                + 'Content-Disposition: form-data; name="my_file"; filename="my_file.bin"\r\n'
+                + 'Content-Disposition: form-data; name="uploadedFile"; filename="' + fileName + '"\r\n'
                 + 'Content-Transfer-Encoding: binary\r\n\r\n'
         );
-        fs.createReadStream('./my_file.bin', { bufferSize: 4 * 1024 })
+        fs.createReadStream('./' + fileName, { bufferSize: 4 * 1024 })
             .on('end', function () {
                 // mark the end of the one and only part
                 request.end('\r\n--' + boundaryKey + '--');
@@ -96,7 +100,6 @@ describe("POST request", function(){
        request.write('data\n');
        request.write('data\n');
        request.end();
-
    });
 });
 
