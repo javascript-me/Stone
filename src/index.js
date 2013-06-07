@@ -28,17 +28,14 @@ function onRequest(request, response) {
 
             console.log(util.inspect({fields: fields, files: files}));
 
-            console.log("files.toString(): " + files[0]);
-
-//            if(files != undefined){
             if(hasFile(files)){
-                fs.rename(files.my_file.path, "ok.bin", function (err) {
+                fs.rename(files.my_file.path, "temp/ok.bin", function (err) {
                     if (err) {
                         console.log("Start fs.unlink");
                         fs.unlink("ok.bin", function(err){
                             console.log("Error: unlink. ");
                         });
-                        fs.rename(files.my_file.path, "ok.bin");
+                        fs.rename(files.my_file.path, "temp/ok.bin");
                     }
                 });
             }
