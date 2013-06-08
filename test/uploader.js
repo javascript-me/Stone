@@ -1,9 +1,10 @@
 
 
-var fileName = process.argv.splice(2)[0];
-console.log(fileName);
+//var fileName = process.argv.splice(2)[0];
+//console.log(fileName);
 
 var http = require("http");
+var fs = require("fs");
 
 var options = {
     hostname: "localhost",
@@ -13,17 +14,33 @@ var options = {
     'content-length': 294
 };
 
-var request = http.request(options, function (response) {
-    var result = "";
-    response.on('data', function (chunk) {
-        result += chunk;
-    });
-    response.on("end", function () {
-    });
-});
+start();
 
-sendPostData(request, fileName);
+function start(){
 
+    var request = http.request(options, function (response) {
+        var result = "";
+        response.on('data', function (chunk) {
+            result += chunk;
+        });
+        response.on("end", function () {
+        });
+    });
+
+    fs.readFile("package.json", "binary", function (error, file) {
+        var content = file.toString();
+        var myObject = JSON.parse(content);
+
+        if (error) {
+
+        } else {
+            console.log("content: " + myObject.version);
+            var fileName = myObject.name + "-" + myObject.version + ".tgz"
+            console.log("==>" + fileName);
+            sendPostData(request, fileName);
+        }
+    });
+}
 
 function sendPostData(request, fileName) {
 //    var fileName = mockData.fileName;
