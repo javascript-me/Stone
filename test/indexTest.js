@@ -10,3 +10,10 @@ describe("Index", function(){
         assert.ok(!index.hasFile({}));
     });
 });
+
+describe("Physical file name of test/mockData.js", function(){
+    it("should be mockData.js", function(){
+        assert.equal("mockData.js", index.getPhysicalFileName("test/mockData.js"));
+        assert.equal("ok.js", index.getPhysicalFileName("test/ok.js"));
+    });
+});

@@ -10,6 +10,13 @@ function hasFile(files){
 
 exports.hasFile = hasFile;
 
+function getPhysicalFileName(filePath){
+    var lastIndexOfSlash = filePath.lastIndexOf("/");
+    return filePath.substring(lastIndexOfSlash + 1, filePath.length);
+}
+
+exports.getPhysicalFileName = getPhysicalFileName;
+
 function onRequest(request, response) {
 
     var pathname = url.parse(request.url).pathname;
@@ -29,19 +36,21 @@ function onRequest(request, response) {
             console.log(util.inspect({fields: fields, files: files}));
 
             if(hasFile(files)){
-                fs.rename(files.uploadedFile.path, "temp/" + files.uploadedFile.name, function (err) {
+                var physicalFileName = getPhysicalFileName(files.uploadedFile.name);
+
+                fs.rename(files.uploadedFile.path, "temp/" + physicalFileName, function (err) {
                     if (err) {
                         console.log("Start fs.unlink");
                         fs.unlink("ok.bin", function(err){
                             console.log("Error: unlink. ");
                         });
-                        fs.rename(files.uploadedFile.path, "temp/" + files.uploadedFile.name);
+                        fs.rename(files.uploadedFile.path, "temp/" + physicalFileName);
                     }
                 });
             }
 
             response.writeHead(200, {"Content-Type": "text/html"});
-            response.write("success upload");
+            response.write("success");
             response.end();
         });
     }
