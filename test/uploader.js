@@ -1,8 +1,4 @@
 
-
-//var fileName = process.argv.splice(2)[0];
-//console.log(fileName);
-
 var http = require("http");
 var fs = require("fs");
 

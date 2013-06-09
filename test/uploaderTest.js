@@ -1,14 +1,14 @@
 var assert = require("assert");
 var mockData = require("./mockData");
 
-function assertResponseSuccess(response, done) {
+function assertResponseSuccess(response, done, expectedResult) {
     assert.equal("200", response.statusCode);
     var result = "";
     response.on("data", function (chunk) {
         result += chunk;
     });
     response.on("end", function () {
-        assert.equal("success", result);
+        assert.equal(expectedResult, result);
         done();
     });
 }
@@ -17,8 +17,9 @@ describe("GET request", function () {
     it("should return success", function (done) {
         var http = require("http");
         http.get("http://localhost:9999", function (response) {
-            assertResponseSuccess(response, done);
+            assertResponseSuccess(response, done, "success");
         });
+
     });
 });
 
@@ -77,6 +78,15 @@ describe("POST request with real data", function () {
     });
 });
 
+describe("List all thing", function(){
+    it("should return a list", function(done){
+        var http = require("http");
+        http.get("http://localhost:9999/list", function (response) {
+            assertResponseSuccess(response, done, '<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head><body>image-home-0.0.2.tgz<br /><a href="/deploy?tgzFileName=image-home-0.0.2.tgz">deploy</a></body></html>');
+        });
+    });
+});
+
 function assertExistFile(done){
     var fs = require("fs");
     fs.readFile("temp/" + mockData.fileName, "utf8", function (err,data) {
@@ -101,7 +111,7 @@ describe("POST request", function(){
        };
 
        var request = http.request(options, function(response) {
-           assertResponseSuccess(response, done);
+           assertResponseSuccess(response, done, "success");
        });
        request.end();
    });
