@@ -82,7 +82,15 @@ describe("List all thing", function(){
     it("should return a list", function(done){
         var http = require("http");
         http.get("http://localhost:9999/list", function (response) {
-            assertResponseSuccess(response, done, '<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head><body>image-home-0.0.2.tgz<br /><a href="/deploy?tgzFileName=image-home-0.0.2.tgz">deploy</a></body></html>');
+            assert.equal("200", response.statusCode);
+            var result = "";
+            response.on("data", function (chunk) {
+                result += chunk;
+            });
+            response.on("end", function () {
+                assert.ok(result.length > 100);
+                done();
+            });
         });
     });
 });

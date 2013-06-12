@@ -6,6 +6,7 @@ Stone
 =====================
 
 ```
+cd /c/doc/dev/Office/JavaScriptThinker/Stone
 node src/index.js
 mocha test/uploaderTest.js
 ```
@@ -17,6 +18,13 @@ cd /c/doc/dev/Office/JavaScriptThinker/image-home
 node /c/doc/dev/Office/JavaScriptThinker/Stone/test/uploader.js
 ```
 
+去到TeamCity - http://localhost:9000/overview.html里进行run的指令，然后打开
+
+http://localhost:9999/list
+
+Deploy你想部署的东西，然后打开部署好的site。
+
+http://localhost:8888/
 
 
 TODO
@@ -35,6 +43,7 @@ TODO
 8、用面向对象的方式来改造我的代码。
 9、提供一个页面上的按钮，点击之后可以把包解压到目标目录。
 10、启动对应的node index.js命令。
+11、待完善的地方还有很多。
 
 
 

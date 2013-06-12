@@ -33,9 +33,9 @@ function onRequest(request, response) {
         var form = new formidable.IncomingForm();
         form.parse(request, function (error, fields, files) {
 
+            console.log("<<<<<<<<<<<<<<<<<<<");
             console.log(util.inspect({fields: fields, files: files}));
-//            var myJSONText = JSON.stringify({fields: fields, files: files});
-//            console.log(myJSONText);
+            console.log(">>>>>>>>>>>>>>>>>");
 
             if (hasFile(files)) {
                 var physicalFileName = getPhysicalFileName(files.uploadedFile.name);
@@ -43,11 +43,12 @@ function onRequest(request, response) {
                 fs.rename(files.uploadedFile.path, "temp/" + physicalFileName, function (err) {
                     if (err) {
                         console.log("Start fs.unlink");
-                        fs.unlink("ok.bin", function (err) {
+                        fs.unlink(files.uploadedFile.path, function (err) {
                             console.log("Error: unlink. ");
                         });
                         fs.rename(files.uploadedFile.path, "temp/" + physicalFileName);
                     }
+
                 });
             }
 
@@ -88,62 +89,10 @@ function onRequest(request, response) {
             response.write(body);
             response.end();
         });
-
-//        var result = {
-//            all: [
-//                {tgzFileName: "image-home-0.0.2.tgz"},
-//                {tgzFileName: "image-home-0.0.3.tgz"},
-//                {tgzFileName: "image-home-0.0.4.tgz"}
-//            ]
-//        };
-
-//        var content = "";
-//        for(var i = 0 ; i < files.length ; i++){
-//            var tgzFileName = files[i];
-//            content += tgzFileName + '<br />';
-//            content += '<a href="/deploy?tgzFileName=' + tgzFileName + '">deploy</a>' + "<br />";
-//        }
-
-        //=======================
-//        var body = '<html>' +
-//            '<head>' +
-//            '<meta http-equiv="Content-Type" ' +
-//            'content="text/html; charset=UTF-8" />' +
-//            '</head>' +
-//            '<body>' +
-//            result.all[0].tgzFileName + '<br />' +
-//            '<a href="/deploy?tgzFileName=' + result.all[0].tgzFileName + '">deploy</a>' + "<br />" +
-//
-//            result.all[1].tgzFileName + '<br />' +
-//            '<a href="/deploy?tgzFileName=' + result.all[1].tgzFileName + '">deploy</a>' + "<br />" +
-//
-//            result.all[2].tgzFileName + '<br />' +
-//            '<a href="/deploy?tgzFileName=' + result.all[2].tgzFileName + '">deploy</a>' + "<br />" +
-//
-//            '</body>' +
-//            '</html>';
-
-//        var body = '<html>' +
-//            '<head>' +
-//            '<meta http-equiv="Content-Type" ' +
-//            'content="text/html; charset=UTF-8" />' +
-//            '</head>' +
-//            '<body>' +
-//            content +
-//
-//            '</body>' +
-//            '</html>';
-//
-//        response.writeHead(200, {"Content-Type": "text/html"});
-//        response.write(body);
-//        response.end();
     }
 
     if (pathname == "/deploy") {
-
         var querystring = require("querystring");
-
-
         console.log("request.url: " + request.url);
         var query = url.parse(request.url).query;
         console.log("query: " + query);
@@ -168,11 +117,14 @@ function onRequest(request, response) {
                 var exec = require('child_process').exec;
 
                 function puts(error, stdout, stderr) {
-                    sys.puts(stdout)
+                    sys.puts(stdout);
+                    console.log("[error]" + error);
+                    console.log("[stdout]" + stdout);
+                    console.log("[stderr]" + stderr);
                 }
 
                 //exec("node target/image-home/package/src/index.js", puts);
-                exec("cd target/image-home/package/src && node index.js", puts);
+                exec("cd target/image-home/package/src && nodemon index.js &", puts);
 //                exec("cd target/image-home/package/src", puts);
 //                exec("node index.js", puts);
 
@@ -180,6 +132,7 @@ function onRequest(request, response) {
                 response.writeHead(200, {"Content-Type": "text/html"});
                 response.write("deploy success");
                 response.end();
+                console.log("Deployment Complete==============================");
             })
 
         });
