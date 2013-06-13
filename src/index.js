@@ -123,11 +123,7 @@ function onRequest(request, response) {
                     console.log("[stderr]" + stderr);
                 }
 
-                //exec("node target/image-home/package/src/index.js", puts);
-                exec("cd target/image-home/package/src && nodemon index.js &", puts);
-//                exec("cd target/image-home/package/src", puts);
-//                exec("node index.js", puts);
-
+                exec("cd target/image-home/package && nodemon src/index.js &", puts);
 
                 response.writeHead(200, {"Content-Type": "text/html"});
                 response.write("deploy success");
