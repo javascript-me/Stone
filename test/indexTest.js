@@ -17,3 +17,9 @@ describe("Physical file name of test/mockData.js", function(){
         assert.equal("ok.js", index.getPhysicalFileName("test/ok.js"));
     });
 });
+
+describe("Main name of image-home-0.0.1.tgz", function(){
+    it("should be image-home", function(){
+        assert.equal("image-home", index.toMainName("image-home-0.0.11.tgz"));
+    })
+});

@@ -78,10 +78,7 @@ describe("Upload something", function () {
         request.end();
     });
 
-
-
     after(function(){//It will be applied to current "Asynchronous setTimeout()" scope.
-        console.log("*********************");
         deleteFile("temp/" + mockData.fileName);
     });
 });

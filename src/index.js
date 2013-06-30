@@ -17,6 +17,13 @@ function getPhysicalFileName(filePath) {
 
 exports.getPhysicalFileName = getPhysicalFileName;
 
+function toMainName(tgzFileName){
+    var lastIndexOfDash = tgzFileName.lastIndexOf("-");
+    return tgzFileName.substr(0, lastIndexOfDash);
+}
+
+exports.toMainName = toMainName;
+
 function onRequest(request, response) {
 
     var pathname = url.parse(request.url).pathname;
@@ -110,7 +117,9 @@ function onRequest(request, response) {
                 console.log("Copy Error! ");
             }
             var tarball = require('tarball-extract');
-            tarball.extractTarball("target/" + inputParameters.tgzFileName, 'target/image-home', function (err) {
+            //把image-home这名字从tgzFileName里提取出来。
+            var mainName = toMainName(inputParameters.tgzFileName);
+            tarball.extractTarball("target/" + inputParameters.tgzFileName, 'target/' + mainName, function (err) {
                 if (err) console.log(err);
 
                 var sys = require('sys')
@@ -122,8 +131,8 @@ function onRequest(request, response) {
                     console.log("[stdout]" + stdout);
                     console.log("[stderr]" + stderr);
                 }
-
-                exec("cd target/image-home/package && nodemon src/index.js &", puts);
+                //把package这一层目录去掉。
+                exec("cd target/" + mainName + "/package && nodemon src/index.js &", puts);
 
                 response.writeHead(200, {"Content-Type": "text/html"});
                 response.write("deploy success");
