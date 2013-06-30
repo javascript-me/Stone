@@ -17,6 +17,7 @@ mocha test/uploaderTest.js
 
 ```
 cd /c/doc/dev/Office/JavaScriptThinker/image-home
+npm pack
 node /c/doc/dev/Office/JavaScriptThinker/Stone/test/uploader.js
 ```
 
@@ -40,7 +41,7 @@ TODO
 [OK]4、把xxx.tar.gz文件名作为uploaderTest.js的入参。
 
 5、把temp目录改名为repository。
-=>6、制作一个页面，列出repository目录里的包。
+6、制作一个页面，列出repository目录里的包。
 [OK]7、Uploader命令不需要提供文件名，而是直接搜索目录下面的package.json文件，取得相应的版本号。
 8、用面向对象的方式来改造我的代码。
 9、提供一个页面上的按钮，点击之后可以把包解压到目标目录。
@@ -49,6 +50,8 @@ TODO
 12、清除不必要的测试文件。
 13、使用自己的logger。
 14、把logger的信息展示到网页里。
+=>15、在把当前的环境清洗干净之前——把一切重复的地方消除，哪里也不去。
+
 
 
 

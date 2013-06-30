@@ -1,4 +1,5 @@
 
-exports.fileName = "beauty.jpg";
+exports.containedFolderPath = "test/";
+exports.fileName = "mockfile.txt";
 
 

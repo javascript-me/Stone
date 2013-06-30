@@ -19,15 +19,12 @@ describe("GET request", function () {
         http.get("http://localhost:9999", function (response) {
             assertResponseSuccess(response, done, "success");
         });
-
     });
 });
 
 function sendPostData(request, fileName) {
-//    var fileName = mockData.fileName;
     var boundaryKey = Math.random().toString(16);
     request.setHeader('Content-Type', 'multipart/form-data; boundary="' + boundaryKey + '"');
-// the header for the one and only part (need to use CRLF here)
     request.write(
         '--' + boundaryKey + '\r\n'
             // use your file's mime type here, if known
@@ -48,20 +45,17 @@ function sendPostData(request, fileName) {
         .pipe(request, { end: false }) // maybe write directly to the socket here?
 }
 
+describe("Upload something", function () {
 
-describe("POST request with real data", function () {
-    it("should see a file in temp folder", function (done) {
+    var http = require("http");
+    var options = {
+        hostname: "localhost",
+        port: 9999,
+        path: "/upload",
+        method: "POST"
+    };
 
-        var http = require("http");
-
-        var options = {
-            hostname: "localhost",
-            port: 9999,
-            path: "/upload",
-            method: "POST",
-            'content-length': 294
-        };
-
+    it("send POST request with actual data should see an uploaded file in repository folder", function (done) {
         var request = http.request(options, function (response) {
             assert.equal("200", response.statusCode);
 
@@ -71,10 +65,24 @@ describe("POST request with real data", function () {
             });
             response.on("end", function () {
                 assert.equal("success", result);
-                assertExistFile(done);
+                assertExistFile(mockData.containedFolderPath + mockData.fileName, done);
             });
         });
-        sendPostData(request, mockData.fileName);
+        sendPostData(request, mockData.containedFolderPath + mockData.fileName);
+    });
+
+    it("send POST request without actual data should return success", function(done){
+        var request = http.request(options, function(response) {
+            assertResponseSuccess(response, done, "success");
+        });
+        request.end();
+    });
+
+
+
+    after(function(){//It will be applied to current "Asynchronous setTimeout()" scope.
+        console.log("*********************");
+        deleteFile("temp/" + mockData.fileName);
     });
 });
 
@@ -95,35 +103,24 @@ describe("List all thing", function(){
     });
 });
 
-function assertExistFile(done){
+function assertExistFile(filePath, done) {
     var fs = require("fs");
-    fs.readFile("temp/" + mockData.fileName, "utf8", function (err,data) {
+    fs.readFile(filePath, "utf8", function (err, data) {
         if (err) {
             return console.log(err);
         }
-        assert.ok(data.length > 0);
+        assert.equal(5, data.length);
         done();
     });
 }
 
-describe("POST request", function(){
-   it("should return success", function(done){
-
-       var http = require("http");
-
-       var options = {
-           hostname: "localhost",
-           port: 9999,
-           path: "/upload",
-           method: "POST"
-       };
-
-       var request = http.request(options, function(response) {
-           assertResponseSuccess(response, done, "success");
-       });
-       request.end();
-   });
-});
+function deleteFile(filePath) {
+    var fs = require('fs');
+    fs.unlink(filePath, function (err) {
+        if (err) throw err;
+        console.log("successfully deleted " + filePath);
+    });
+}
 
 
 
