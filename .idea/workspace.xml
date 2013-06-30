@@ -2,23 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0923422-ec5a-46da-a8a4-3dc8c6127187" name="Default" comment="Integrate with teamcity successfully.">
-      <change type="MOVED" beforePath="C:\Doc\Dev\Office\JavaScriptThinker\Stone\src\executeIndexJs.js" afterPath="$PROJECT_DIR$/src/other/executeIndexJs.js" />
-      <change type="MOVED" beforePath="C:\Doc\Dev\Office\JavaScriptThinker\Stone\src\executeLs.js" afterPath="$PROJECT_DIR$/src/other/executeLs.js" />
-      <change type="MOVED" beforePath="C:\Doc\Dev\Office\JavaScriptThinker\Stone\src\executePwd.js" afterPath="$PROJECT_DIR$/src/other/executePwd.js" />
-      <change type="MOVED" beforePath="C:\Doc\Dev\Office\JavaScriptThinker\Stone\src\inpector.js" afterPath="$PROJECT_DIR$/src/other/inpector.js" />
-      <change type="MOVED" beforePath="C:\Doc\Dev\Office\JavaScriptThinker\Stone\src\sample.js" afterPath="$PROJECT_DIR$/src/other/sample.js" />
-      <change type="MOVED" beforePath="C:\Doc\Dev\Office\JavaScriptThinker\Stone\src\tarballExtractor.js" afterPath="$PROJECT_DIR$/src/other/tarballExtractor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Stone.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371149011405" ignored="false" />
+    <file path="/Dummy.txt" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1372593069005" ignored="false" />
     <file path="/uploaderTest.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371045811383" ignored="false" />
-    <file path="/index.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371050928848" ignored="false" />
-    <file path="/README.md" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371147291710" ignored="false" />
+    <file path="/index.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371201880470" ignored="false" />
+    <file path="/README.md" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1372593544648" ignored="false" />
     <file path="/my_file.bin" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370631828773" ignored="false" />
-    <file path="$PROJECT_DIR$/../image-home/src/requestHandlers.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371052216006" ignored="false" />
+    <file path="$PROJECT_DIR$/../image-home/src/requestHandlers.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371203512946" ignored="false" />
     <file path="/ok.bin" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370537228668" ignored="false" />
     <file path="/indexTest.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370704158928" ignored="false" />
     <file path="/existFileTest.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370632403318" ignored="false" />
@@ -27,15 +21,23 @@
     <file path="/sleep.txt" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370632113902" ignored="false" />
     <file path="/fragment.js2" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370701346898" ignored="false" />
     <file path="/uploader.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370716532426" ignored="false" />
-    <file path="$PROJECT_DIR$/../image-home/package.json" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371148136485" ignored="false" />
-    <file path="$PROJECT_DIR$/../image-home/.idea/workspace.xml" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371149010766" ignored="false" />
+    <file path="$PROJECT_DIR$/../image-home/package.json" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371203494140" ignored="false" />
+    <file path="$PROJECT_DIR$/../image-home/.idea/workspace.xml" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371203704914" ignored="false" />
     <file path="$PROJECT_DIR$/../image-home/README.md" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371147455524" ignored="false" />
     <file path="/.gitignore" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370799396396" ignored="false" />
     <file path="$PROJECT_DIR$/../image-home/src/server.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370882933567" ignored="false" />
     <file path="/server.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370882931758" ignored="false" />
-    <file path="$PROJECT_DIR$/../first-server/src/index.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371043630367" ignored="false" />
+    <file path="$PROJECT_DIR$/../first-server/src/index.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371202007117" ignored="false" />
     <file path="$PROJECT_DIR$/../first-server/test/indexTest.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371043824494" ignored="false" />
-    <file path="/requestHandlers.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371052216006" ignored="false" />
+    <file path="/requestHandlers.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371203512946" ignored="false" />
+    <file path="$PROJECT_DIR$/../hello-mocha/src/server/server.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371149317036" ignored="false" />
+    <file path="$PROJECT_DIR$/../hello-mocha/test/assertionLibrary/expectTest.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371149663351" ignored="false" />
+    <file path="/expectTest.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371149662242" ignored="false" />
+    <file path="$PROJECT_DIR$/../first-server/src/multiplier.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371201523284" ignored="false" />
+    <file path="/multiplier.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371201518193" ignored="false" />
+    <file path="$PROJECT_DIR$/../image-home/src/index.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371202646908" ignored="false" />
+    <file path="$PROJECT_DIR$/../hello-mocha/test/mochaTest.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371202906296" ignored="false" />
+    <file path="$PROJECT_DIR$/../hello-mocha/test/server/serverTest.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371203164115" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -85,6 +86,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -94,10 +96,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="0" selection-start="4148" selection-end="4148" vertical-scroll-proportion="0.3222836">
+            <state line="76" column="33" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="17" selection-start="139" selection-end="139" vertical-scroll-proportion="0.4032258">
               <folding />
             </state>
           </provider>
@@ -133,10 +144,10 @@
         <option value="$PROJECT_DIR$/src/executeLs.js" />
         <option value="$PROJECT_DIR$/src/inpector.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test/uploaderTest.js" />
         <option value="$PROJECT_DIR$/target/image-home/package/src/requestHandlers.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -204,57 +215,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Stone" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image-home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="package" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,8 +255,8 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -328,19 +289,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -367,6 +315,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -471,6 +432,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32307693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -484,11 +446,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2621212" sideWeight="0.95726496" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23863636" sideWeight="0.6769231" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32418525" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -562,6 +523,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="30" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="41" selection-start="4349" selection-end="4349" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/other/executeLs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="169" selection-end="169" vertical-scroll-proportion="0.22401434" />
@@ -584,9 +566,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/other/executePwd.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="3" selection-start="351" selection-end="351" vertical-scroll-proportion="0.53956836">
-          <folding />
-        </state>
+        <state line="12" column="3" selection-start="351" selection-end="351" vertical-scroll-proportion="0.53956836" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/uploader.js">
@@ -601,35 +581,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/other/tarballExtractor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="163" selection-end="163" vertical-scroll-proportion="0.13440861">
-          <folding />
-        </state>
+        <state line="3" column="2" selection-start="163" selection-end="163" vertical-scroll-proportion="0.13440861" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/other/sample.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="12" selection-start="655" selection-end="655" vertical-scroll-proportion="0.41756272">
-          <folding />
-        </state>
+        <state line="20" column="12" selection-start="655" selection-end="655" vertical-scroll-proportion="0.41756272" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/other/inpector.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="131" selection-end="131" vertical-scroll-proportion="0.13440861">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="408" selection-end="408" vertical-scroll-proportion="0.4032258">
-          <folding />
-        </state>
+        <state line="3" column="32" selection-start="131" selection-end="131" vertical-scroll-proportion="0.13440861" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="4148" selection-end="4148" vertical-scroll-proportion="0.3222836">
+        <state line="76" column="33" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beauty.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="139" selection-end="139" vertical-scroll-proportion="0.4032258">
           <folding />
         </state>
       </provider>
