@@ -10,7 +10,7 @@
     </list>
     <ignored path="Stone.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1372600642403" ignored="false" />
+    <file path="/Dummy.txt" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1372600767549" ignored="false" />
     <file path="/uploaderTest.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1372597077828" ignored="false" />
     <file path="/index.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371201880470" ignored="false" />
     <file path="/README.md" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1372600088316" ignored="false" />
@@ -25,9 +25,9 @@
     <file path="/fragment.js2" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370701346898" ignored="false" />
     <file path="/uploader.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370716532426" ignored="false" />
     <file path="$PROJECT_DIR$/../image-home/package.json" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1372600271918" ignored="false" />
-    <file path="$PROJECT_DIR$/../image-home/.idea/workspace.xml" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1372600642121" ignored="false" />
+    <file path="$PROJECT_DIR$/../image-home/.idea/workspace.xml" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1372600767258" ignored="false" />
     <file path="$PROJECT_DIR$/../image-home/README.md" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371147455524" ignored="false" />
-    <file path="/.gitignore" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370799396396" ignored="false" />
+    <file path="/.gitignore" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1372600761544" ignored="false" />
     <file path="$PROJECT_DIR$/../image-home/src/server.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370882933567" ignored="false" />
     <file path="/server.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1370882931758" ignored="false" />
     <file path="$PROJECT_DIR$/../first-server/src/index.js" changelist="b0923422-ec5a-46da-a8a4-3dc8c6127187" time="1371202007117" ignored="false" />
@@ -139,7 +139,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="5" selection-start="13" selection-end="13" vertical-scroll-proportion="0.08143322">
+            <state line="2" column="6" selection-start="20" selection-end="20" vertical-scroll-proportion="0.16286644">
               <folding />
             </state>
           </provider>
@@ -190,13 +190,13 @@
         <option value="$PROJECT_DIR$/src/executeIndexJs.js" />
         <option value="$PROJECT_DIR$/src/executeLs.js" />
         <option value="$PROJECT_DIR$/src/inpector.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/target/image-home/package/src/requestHandlers.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/mockfile.txt" />
         <option value="$PROJECT_DIR$/test/mockData.js" />
         <option value="$PROJECT_DIR$/test/uploaderTest.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -307,6 +307,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Stone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,7 +531,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -537,7 +551,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23863636" sideWeight="0.5728988" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23863636" sideWeight="0.5728988" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -698,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="5" selection-start="13" selection-end="13" vertical-scroll-proportion="0.08143322">
+        <state line="2" column="6" selection-start="20" selection-end="20" vertical-scroll-proportion="0.16286644">
           <folding />
         </state>
       </provider>
